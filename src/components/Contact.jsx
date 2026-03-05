@@ -15,16 +15,12 @@ export default function Contact() {
 
         // ----- Enter your Web3 Forms Access key below---------
 
-        formData.append("access_key", "--- enter your access key here-------");
+        formData.append("access_key", "7151d4df-2ba4-4436-aaba-924bf2571daf");
 
-        const res = {
-            success: true,
-            message: "Message sent successfully"
-        };
-        // const res = await fetch("https://api.web3forms.com/submit", {
-        //     method: "POST",
-        //     body: formData
-        // }).then((res) => res.json());
+        const res = await fetch("https://api.web3forms.com/submit", {
+            method: "POST",
+            body: formData
+        }).then((res) => res.json());
 
         if (res.success) {
             console.log("Success", res);
