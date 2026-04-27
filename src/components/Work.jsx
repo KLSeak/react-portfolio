@@ -23,6 +23,14 @@ export default function Work() {
             icon: './assets/work-4.jpeg',
             description: 'Java roadmap',
             link: 'https://java-roadmap.pages.dev/',
+        },
+        {
+            name: 'Student Registration',
+            icon: './assets/work-5.jpeg',
+            description: 'React-js, Node-js, Mongodb',
+            link: 'https://student-regis-frontend.leangseakkong.workers.dev/login'
+
+
         }
     ];
     return (
@@ -39,7 +47,7 @@ export default function Work() {
                     rel="noopener noreferrer"
                 >
                     <div 
-                    className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group" 
+                    className="aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group w-[200px] " 
                     style={{ backgroundImage: `url(${work.icon})` }}
                     >
                     <div className="bg-white w-10/12 rounded-md absolute bottom-5 left-1/2 -translate-x-1/2 py-3 px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
